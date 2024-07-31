@@ -174,9 +174,36 @@
     
     <section class="client-reviews px-6 lg:px-28 mt-[150px] mb-[300px]">
         <h1 class="text-[48px] font-bold text-secondary-dark-blue text-center mb-[100px]">Let’s See What Our Clients Says</h1>
-        <div class="card-wrapper">
-            <div class="card-client-review py-[52px] px-[30px]">
+        <div class="client-content-wrapper flex justify-center items-center space-x-[0px] lg:space-x-[70px]">
+            <div class="left-arrow-wrapper hidden md:flex justify-center items-center overflow-hidden max-w-[121px] h-[50px] px-4 cursor-pointer hover:shadow-lg rounded-xl">
+                <img  src="assets/images/Arrow left.png" alt="left arrow">
+            </div>
+            <div class="card-client-review flex flex-col py-[42px] px-[30px] space-y-6 max-w-[400px] border border-[#F1F1F1] hover:shadow-lg">
+                <div class="card-header flex items-center space-x-4">
+                    <div class="img-profile-frame size-[42px]">
+                        <img src="assets/images/person-profil-photo.png" alt="">
+                    </div>
+                    <div>
+                        <p class="card-image-profile font-bold text-[20px] text-secondary-dark-blue">Brooklyn Simmons</p>
+                        <p class="card-person-role font-medium text-[15px] text-gray-light">Nursing Assistant</p>
+                    </div>
+                </div>
+                <p class="card-body text-[15px] text-gray-light tracking-wider">
+                    Odio dictum lacus augue nulla sit integer facilisis massa. Nec et tellus eu amet. Faucibus sit sit massa ullamcorper
+                </p>
+            </div>
+            
+            <div class="right-arrow-wrapper hidden md:flex justify-center items-center overflow-hidden max-w-[121px] h-[50px] px-4 cursor-pointer hover:shadow-lg rounded-xl">
+                <img width="" src="assets/images/Arrow right.png" alt="right arrow">
+            </div>
+        </div>
 
+        <div class="mobile-navigation-client-reviews sm:hidden flex justify-between items-center mt-6">
+            <div class="left-arrow-wrapper flex justify-center items-center overflow-hidden max-w-[121px] h-[50px] px-4 cursor-pointer hover:shadow-lg rounded-xl">
+                <img  src="assets/images/Arrow left.png" alt="left arrow">
+            </div>
+            <div class="right-arrow-wrapper flex justify-center items-center overflow-hidden max-w-[121px] h-[50px] px-4 cursor-pointer hover:shadow-lg rounded-xl">
+                <img width="" src="assets/images/Arrow right.png" alt="right arrow">
             </div>
         </div>
     </section>
