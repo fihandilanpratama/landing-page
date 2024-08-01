@@ -14,7 +14,6 @@ module.exports = {
         'gray-medium': '#818181',
         'gray-light': '#7A8994',
       },
-    },
     fontFamily: {
       inter: ['Inter', 'sans-serif'],
       biryani: ['Biryani', 'sans-serif'],
@@ -22,4 +21,4 @@ module.exports = {
   },
   plugins: [],
 }
-
+}
