@@ -15,22 +15,67 @@
 
     <header class="bg-transparent px-6 lg:px-28 py-3 z-10">
         <div class="flex justify-between items-center">
-            <div class="brand flex flex-row items-center">
+            <div class="brand left-bav flex flex-row items-center">
                 <h1 class="font-biryani text-secondary-dark-blue text-[40px] mr-2">silika</h1>
                 <button class="text-[10px] w-max h-max text-white tracking-[1px] font-semibold bg-primary-red hover:bg-primary-dark-red rounded-[5px] px-3 py-2">We're Hiring</button>
             </div>
-            <div class="menu text-[16px] font-medium hidden lg:block">
-                <ul class="flex space-x-7">
-                    <li><a href="#" class="hover:text-white">user cases</a></li>
-                    <li><a href="#" class="hover:text-white">resources</a></li>
-                    <li><a href="#" class="hover:text-white">weekley demos</a></li>
-                    <li><a href="#" class="hover:text-white">pricing</a></li>
+            <div class="main-nav text-[16px] font-medium hidden lg:block">
+                <ul class="flex space-x-7 2xl:space-x-12">
+                    <li class="relative group py-2">
+                        <a href="#" class="hover:text-white after:contents-[''] after:size-[9px] after:inline-block after:ml-3 after:mb-1 after:border-r-2 after:border-b-2 after:border-black after:hover:border-white after:rotate-45">user cases</a>
+                        <ul class="absolute font-normal left-0 p-3 mt-2 hidden w-max bg-white text-black shadow-lg group-hover:block">
+                            <li><a href="#" class="block px-4 py-2 border-b border-b-transparent hover:border-b-gray-dark">bisnis problem</a></li>
+                            <li><a href="#" class="block px-4 py-2 border-b border-b-transparent hover:border-b-gray-dark">new feature</a></li>
+                            <li><a href="#" class="block px-4 py-2 border-b border-b-transparent hover:border-b-gray-dark">company profile</a></li>
+                        </ul>
+                    </li>
+                    <li class="relative group py-2">
+                        <a href="#" class="hover:text-white after:contents-[''] after:size-[9px] after:inline-block after:ml-3 after:mb-1 after:border-r-2 after:border-b-2 after:border-black after:hover:border-white after:rotate-45">resources</a>
+                        <ul class="absolute font-normal left-0 p-3 mt-2 hidden bg-white text-black shadow-lg group-hover:block">
+                            <li><a href="#" class="block px-4 py-2 border-b border-b-transparent hover:border-b-gray-dark">online</a></li>
+                            <li><a href="#" class="block px-4 py-2 border-b border-b-transparent hover:border-b-gray-dark">offline</a></li>
+                        </ul>
+                    </li>
+                    <li class="py-2"><a href="#" class="hover:text-white">weekley demos</a></li>
+                    <li class="py-2"><a href="#" class="hover:text-white">pricing</a></li>
                 </ul>
             </div>
-            <div class="right-menu hidden lg:block">
+            <div class="right-nav hidden lg:block">
                 <a href="#" class="text-[16px] text-secondary-dark-blue hover:text-white font-semibold mr-2">Login</a>
                 <button class="text-[14px] w-max h-max text-white font-semibold tracking-[1px] bg-primary-teal hover:bg-primary-dark-teal rounded-[5px] px-[30px] py-[15px]">Get Started</button>
             </div>
+
+            <div class="mobile-menu lg:hidden">
+                <div class="mobile-menu-btn overflow-hidden cursor-pointer">
+                    <div class="menu-btn-burger bg-center bg-no-repeat bg-cover size-[30px]" style="background-image: url('assets/icons/icons8-hamburger-menu.svg');"></div>
+                </div> 
+            </div>
+
+            <div class="mobile-menu-list hidden flex-col top-0 right-0 px-6 py-3 w-[80%] h-full fixed bg-white text-[18px] text-secondary-dark-blue shadow-2xl z-10 translate-x-[100%] transition-transform duration-300">
+                <div class="menu-btn-close overflow-hidden cursor-pointer self-end my-4">
+                    <div class="menu-btn-close bg-center bg-no-repeat bg-cover size-[30px]" style="background-image: url('assets/icons/icons8-close.svg');"></div>
+                </div> 
+                <ul class="flex flex-col space-y-8">
+                    <li>
+                        <span class="font-medium">user cases</span>
+                        <ul class="list-inside list-disc text-gray-dark">
+                            <li><a href="https://google.com" target="_blank">bisnis problem</a></li>
+                            <li><a href="#">new feature</a></li>
+                            <li><a href="#">company profile</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span class="font-medium">resources</span>
+                        <ul class="list-inside list-disc text-gray-dark">
+                            <li><a href="#">online</a></li>
+                            <li><a href="#">offline</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" class="font-medium">weekley demos</a></li>
+                    <li><a href="#" class="font-medium">pricing</a></li>
+                </ul>
+            </div>
+
         </div>
     </header>
 

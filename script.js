@@ -20,3 +20,30 @@ const slidePrev = () => {
 const slideNext = () => {
     swiper.slideNext();
 }
+
+// mobile menu toggle event
+document.addEventListener('DOMContentLoaded', () => {
+  const mobileMenu = document.querySelector('.mobile-menu-btn');
+  const mobileMenuClose = document.querySelector('.menu-btn-close');
+  const mobileMenuList = document.querySelector('.mobile-menu-list');
+
+  // tampilkan menu
+  mobileMenu.addEventListener('click', () => {
+      mobileMenuList.classList.remove('hidden')
+      mobileMenuList.classList.add('flex')
+      setTimeout(() => {
+        mobileMenuList.classList.remove('translate-x-[100%]')
+        mobileMenuList.classList.add('translate-x-0')
+      }, 10)
+  })
+
+  // menututup menu
+  mobileMenuClose.addEventListener('click', () => {
+    mobileMenuList.classList.remove('translate-x-0')
+    mobileMenuList.classList.add('translate-x-[100%]')
+    setTimeout(() => {
+      mobileMenuList.classList.add('hidden')
+      mobileMenuList.classList.remove('flex')
+    }, 300)
+  })
+})
