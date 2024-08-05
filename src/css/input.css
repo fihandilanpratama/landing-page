@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @font-face {
     font-family: 'Biryani';
     src: url('../assets/fonts/Biryani-Bold.ttf') format('truetype');
@@ -31,4 +35,22 @@
     src: url('../assets/fonts/Inter-Bold.ttf') format('truetype');
     font-weight: 700;
     font-style: normal;
-}   
+}
+
+div.main-nav li.relative > a::after,
+div.mobile-menu-list li span::after {
+    content: '';
+    width: 9px;
+    height: 9px;
+    display: inline-block;
+    margin-left: 12px;
+    margin-bottom: 4px;
+    border-bottom: 2px solid #000;
+    border-right: 2px solid #000;
+    transform: rotate(45deg);
+}
+
+.main-nav li.relative > a:hover::after {
+    border-bottom: 2px solid #fff;
+    border-right: 2px solid #fff;
+}

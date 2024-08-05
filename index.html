@@ -4,12 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>landing page</title>
-    <link rel="stylesheet" href="src/style.css">
-    <link rel="stylesheet" href="src/output.css">
-    <link
-        rel="stylesheet"
-        href="src/css/swiper-bundle.min.css"
-    />
+    <link rel="stylesheet" href="src/css/output.css">
+    <link rel="stylesheet" href="src/css/swiper-bundle.min.css"/>
 </head>
 <body class="font-inter">
 
@@ -22,7 +18,7 @@
             <div class="main-nav text-[16px] font-medium hidden lg:block">
                 <ul class="flex space-x-7 2xl:space-x-12">
                     <li class="relative group py-2">
-                        <a href="#" class="hover:text-white after:contents-[''] after:size-[9px] after:inline-block after:ml-3 after:mb-1 after:border-r-2 after:border-b-2 after:border-black after:hover:border-white after:rotate-45">user cases</a>
+                        <a href="#" class="hover:text-white">user cases</a>
                         <ul class="absolute font-normal left-0 p-3 mt-2 hidden w-max bg-white text-black shadow-lg group-hover:block">
                             <li><a href="#" class="block px-4 py-2 border-b border-b-transparent hover:border-b-gray-dark">bisnis problem</a></li>
                             <li><a href="#" class="block px-4 py-2 border-b border-b-transparent hover:border-b-gray-dark">new feature</a></li>
@@ -30,7 +26,7 @@
                         </ul>
                     </li>
                     <li class="relative group py-2">
-                        <a href="#" class="hover:text-white after:contents-[''] after:size-[9px] after:inline-block after:ml-3 after:mb-1 after:border-r-2 after:border-b-2 after:border-black after:hover:border-white after:rotate-45">resources</a>
+                        <a href="#" class="hover:text-white">resources</a>
                         <ul class="absolute font-normal left-0 p-3 mt-2 hidden bg-white text-black shadow-lg group-hover:block">
                             <li><a href="#" class="block px-4 py-2 border-b border-b-transparent hover:border-b-gray-dark">online</a></li>
                             <li><a href="#" class="block px-4 py-2 border-b border-b-transparent hover:border-b-gray-dark">offline</a></li>
@@ -58,21 +54,22 @@
                 <ul class="flex flex-col space-y-8">
                     <li>
                         <span class="font-medium">user cases</span>
-                        <ul class="list-inside list-disc text-gray-dark">
-                            <li><a href="https://google.com" target="_blank">bisnis problem</a></li>
-                            <li><a href="#">new feature</a></li>
-                            <li><a href="#">company profile</a></li>
+                        <ul class="list-inside text-gray-dark">
+                            <li><a class="ml-8" href="https://google.com" target="_blank">bisnis problem</a></li>
+                            <li><a class="ml-8" href="#">new feature</a></li>
+                            <li><a class="ml-8" href="#">company profile</a></li>
                         </ul>
                     </li>
                     <li>
                         <span class="font-medium">resources</span>
-                        <ul class="list-inside list-disc text-gray-dark">
-                            <li><a href="#">online</a></li>
-                            <li><a href="#">offline</a></li>
+                        <ul class="list-inside  text-gray-dark">
+                            <li><a class="ml-8" href="#">online</a></li>
+                            <li><a class="ml-8" href="#">offline</a></li>
                         </ul>
                     </li>
                     <li><a href="#" class="font-medium">weekley demos</a></li>
                     <li><a href="#" class="font-medium">pricing</a></li>
+                    <li><a href="#" class="font-medium">login</a></li>
                 </ul>
             </div>
 
@@ -225,14 +222,11 @@
         <h1 class="text-[48px] font-bold text-secondary-dark-blue text-center mb-[100px]">Let’s See What Our Clients Says</h1>
         <div class="swiper max-w-[600px]">
             <div class="swiper-wrapper">
-                <!-- <div class="left-arrow-wrapper swiper-button-prev hidden md:flex justify-center items-center overflow-hidden max-w-[121px] h-[50px] px-4 cursor-pointer hover:shadow-lg rounded-xl">
-                    <img  src="assets/images/Arrow left.png" alt="left arrow">
-                </div> -->
                 <div class="swiper-slide flex justify-center">
                     <div class="card-client-review flex flex-col py-[42px] px-[30px] mx-auto space-y-6 max-w-[400px] border border-[#F1F1F1] hover:shadow-lg">
                         <div class="card-header flex items-center space-x-4">
                             <div class="img-profile-frame size-[42px]">
-                                <img src="assets/images/person-profil-photo.png" alt="">
+                                <img src="assets/images/person-1.png" alt="">
                             </div>
                             <div>
                                 <p class="card-image-profile font-bold text-[20px] text-secondary-dark-blue">Brooklyn Simmons 1</p>
@@ -249,7 +243,7 @@
                     <div class="card-client-review flex flex-col py-[42px] px-[30px] mx-auto space-y-6 max-w-[400px] border border-[#F1F1F1] hover:shadow-lg">
                         <div class="card-header flex items-center space-x-4">
                             <div class="img-profile-frame size-[42px]">
-                                <img src="assets/images/person-profil-photo.png" alt="">
+                                <img src="assets/images/person-1.png" alt="">
                             </div>
                             <div>
                                 <p class="card-image-profile font-bold text-[20px] text-secondary-dark-blue">Brooklyn Simmons 2</p>
@@ -266,7 +260,7 @@
                     <div class="card-client-review flex flex-col py-[42px] px-[30px] mx-auto space-y-6 max-w-[400px] border border-[#F1F1F1] hover:shadow-lg">
                         <div class="card-header flex items-center space-x-4">
                             <div class="img-profile-frame size-[42px]">
-                                <img src="assets/images/person-profil-photo.png" alt="">
+                                <img src="assets/images/person-1.png" alt="">
                             </div>
                             <div>
                                 <p class="card-image-profile font-bold text-[20px] text-secondary-dark-blue">Brooklyn Simmons 3</p>
@@ -278,10 +272,6 @@
                         </p>
                     </div>      
                 </div>
-                
-                <!-- <div class="right-arrow-wrapper swiper-button-next hidden md:flex justify-center items-center overflow-hidden max-w-[121px] h-[50px] px-4 cursor-pointer hover:shadow-lg rounded-xl">
-                    <img width="" src="assets/images/Arrow right.png" alt="right arrow">
-                </div> -->
             </div>
 
             <div class="invisible md:visible swiper-button-prev"></div>
@@ -438,7 +428,72 @@
         </div>
     </section>
 
+    <footer class="py-16 px-5 md:px-8 lg:px-32 2xl:px-64 mx-auto mt-[150px] bg-secondary-dark-blue text-white">
+        <div class="links-wrapper flex flex-row flex-wrap justify-between gap-8">
+            <div class="categori-links">
+                <p class="font-medium text-[12px] mb-3">Products</p>
+                    <ul class="flex flex-col space-y-1">
+                        <li><a href="#" class="font-medium text-[14px] capitalize hover:text-primary-red">login</a></li>
+                        <li><a href="#" class="font-medium text-[14px] capitalize hover:text-primary-red">pricing</a></li>
+                        <li><a href="#" class="font-medium text-[14px] capitalize hover:text-primary-red">copy ai reviews</a></li>
+                        <li><a href="#" class="font-medium text-[14px] capitalize hover:text-primary-red">alternatives</a></li>
+                        <li><a href="#" class="font-medium text-[14px] capitalize hover:text-primary-red">25+ languages</a></li>
+                        <li><a href="#" class="font-medium text-[14px] capitalize hover:text-primary-red">free ai tools</a></li>
+                    </ul>
+            </div>
+            <div class="categori-links">
+                <p class="font-medium text-[12px] mb-3">Company</p>
+                    <ul class="flex flex-col space-y-1">
+                        <li><a href="#" class="font-medium text-[14px] capitalize hover:text-primary-red">blog</a></li>
+                        <li><a href="#" class="font-medium text-[14px] capitalize hover:text-primary-red">careers</a></li>
+                        <li><a href="#" class="font-medium text-[14px] capitalize hover:text-primary-red">community</a></li>
+                        <li><a href="#" class="font-medium text-[14px] capitalize hover:text-primary-red">twitter</a></li>
+                        <li><a href="#" class="font-medium text-[14px] capitalize hover:text-primary-red">linkedin</a></li>
+                        <li><a href="#" class="font-medium text-[14px] capitalize hover:text-primary-red">affiliate program</a></li>
+                    </ul>
+            </div>
+            <div class="categori-links">
+                <p class="font-medium text-[12px] mb-3">Support</p>
+                    <ul class="flex flex-col space-y-1">
+                        <li><a href="#" class="font-medium text-[14px] capitalize hover:text-primary-red">weekley deos</a></li>
+                        <li><a href="#" class="font-medium text-[14px] capitalize hover:text-primary-red">contact us</a></li>
+                        <li><a href="#" class="font-medium text-[14px] capitalize hover:text-primary-red">report a bug</a></li>
+                        <li><a href="#" class="font-medium text-[14px] capitalize hover:text-primary-red">report an outage</a></li>
+                        <li><a href="#" class="font-medium text-[14px] capitalize hover:text-primary-red">request a new feature</a></li>
+                     </ul>
+            </div>
+            <div class="categori-links">
+                <p class="font-medium text-[12px] mb-3">User Cases</p>
+                    <ul class="flex flex-col space-y-1">
+                        <li><a href="#" class="font-medium text-[14px] capitalize hover:text-primary-red">for blog writers</a></li>
+                        <li><a href="#" class="font-medium text-[14px] capitalize hover:text-primary-red">for social media</a></li>
+                        <li><a href="#" class="font-medium text-[14px] capitalize hover:text-primary-red">managers</a></li>
+                        <li><a href="#" class="font-medium text-[14px] capitalize hover:text-primary-red">report</a></li>
+                    </ul>
+            </div>
+        </div>
+        <div class="links-footer flex flex-col lg:flex-row justify-between space-y-3 mt-10">
+            <div class="col-1 flex justify-center items-center space-x-2 sm:space-x-4 text-[10px] text-biryani font-bold">
+                <p class="text-[20px]">Silika.ai</p>
+                <p>2022 copy ai, Inc</p>
+                <p><a href="#" class="hover:text-primary-red">Privacy Notice</a></p>
+                <p><a href="#" class="hover:text-primary-red">Terms of service</a></p>
+            </div>
+            <div class="col-2 flex justify-center items-center space-x-3">
+                <a href="https://facebook.com" target="_blank">
+                    <img src="assets/icons/akar-icons_facebook-fill.png" alt="facebook">
+                </a>
+                <a href="https://instagram.com" target="_blank">
+                    <img src="assets/icons/akar-icons_instagram-fill.png" alt="instagram">
+                </a>
+                <a href="https://twitter.com" target="_blank">
+                    <img src="assets/icons/akar-icons_twitter-fill.png" alt="twitter">
+                </a>
+            </div>
+        </div>
+    </footer>
+
 <script src="src/js/swiper-bundle.min.js"></script>
-<script src="script.js"></script>
+<script src="src/js/script.js"></script>
 </body>
 </html>
