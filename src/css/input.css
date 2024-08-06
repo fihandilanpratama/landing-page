@@ -54,3 +54,11 @@ div.mobile-menu-list li span::after {
     border-bottom: 2px solid #fff;
     border-right: 2px solid #fff;
 }
+
+div.half-circle-top > div {
+    margin-top: calc(100vh - 35vh);
+}
+
+div.half-circle-bottom > div {
+    margin-top: calc(20vh);
+}
