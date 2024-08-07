@@ -1,3 +1,4 @@
+// initialize swiper
 const swiper = new Swiper('.swiper', {
     slidesPerView: 1,
     spaceBetween: 70,
@@ -9,7 +10,19 @@ const swiper = new Swiper('.swiper', {
     scrollbar: {
       el: '.swiper-scrollbar',
     },
-  });
+});
+
+
+// intialize aos
+try {
+  AOS.init();
+  AOS.init({
+    duration: 1000,
+    once: true
+  })
+} catch (error) {
+  console.log(error)
+}
 
 
 // Custom navigation buttons for mobile
@@ -20,6 +33,9 @@ const slidePrev = () => {
 const slideNext = () => {
     swiper.slideNext();
 }
+
+
+
 
 // mobile menu toggle event
 document.addEventListener('DOMContentLoaded', () => {
